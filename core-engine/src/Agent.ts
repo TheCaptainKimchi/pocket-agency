@@ -1,4 +1,4 @@
-import { Mission, MissionStatus } from './Mission';
+import { Mission, MissionStatus } from './Mission.js';
 
 /**
  * Agent type enumeration

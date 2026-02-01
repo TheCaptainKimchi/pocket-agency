@@ -4,6 +4,7 @@
   "description": "Core game engine modules for Pocket Agency",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch"

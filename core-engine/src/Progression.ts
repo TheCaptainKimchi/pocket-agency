@@ -1,4 +1,4 @@
-import { Agent, AgentType } from './Agent';
+import { Agent, AgentType } from './Agent.js';
 
 /**
  * Feature unlock conditions

@@ -7,17 +7,17 @@
  * @module core-engine
  */
 
-export { Agent, AgentType, AgentStatus, AgentStats } from './Agent';
-export { Mission, MissionStatus, MissionReward } from './Mission';
+export { Agent, AgentType, AgentStatus, AgentStats } from './Agent.js';
+export { Mission, MissionStatus, MissionReward } from './Mission.js';
 export { 
   Progression, 
   ProgressionData, 
   UnlockableFeature, 
   UnlockCondition 
-} from './Progression';
+} from './Progression.js';
 export { 
   Network, 
   NetworkConfig, 
   ApiResponse, 
   MissionUpdate 
-} from './Network';
+} from './Network.js';
