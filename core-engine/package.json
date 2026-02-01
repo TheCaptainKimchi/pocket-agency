@@ -1,0 +1,21 @@
+{
+  "name": "core-engine",
+  "version": "1.0.0",
+  "description": "Core game engine modules for Pocket Agency",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "game-engine",
+    "agents",
+    "missions"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

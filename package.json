@@ -1,0 +1,36 @@
+{
+  "name": "pocket-agency",
+  "version": "1.0.0",
+  "description": "AI agent game with cross-platform support",
+  "private": true,
+  "workspaces": [
+    "core-engine",
+    "web-client",
+    "server"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm run install:mobile",
+    "install:mobile": "cd mobile-client && npm install",
+    "build": "npm run build --workspaces --if-present",
+    "build:core": "npm run build --workspace=core-engine",
+    "build:web": "npm run build --workspace=web-client",
+    "build:server": "npm run build --workspace=server",
+    "dev:web": "npm run dev --workspace=web-client",
+    "dev:server": "npm run dev --workspace=server",
+    "mobile:sync": "cd mobile-client && npx cap sync",
+    "mobile:open:android": "cd mobile-client && npx cap open android",
+    "mobile:open:ios": "cd mobile-client && npx cap open ios"
+  },
+  "keywords": [
+    "game",
+    "phaser",
+    "typescript",
+    "capacitor",
+    "ai-agents"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

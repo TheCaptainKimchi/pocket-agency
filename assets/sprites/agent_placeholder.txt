@@ -1,0 +1,3 @@
+# Placeholder sprite file
+# Replace with actual agent sprite images
+# Recommended: 64x64 PNG with transparency

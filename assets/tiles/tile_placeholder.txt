@@ -1,0 +1,3 @@
+# Placeholder tile file
+# Replace with actual tileset images
+# Recommended: 32x32 PNG tiles
