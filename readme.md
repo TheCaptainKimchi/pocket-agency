@@ -53,7 +53,7 @@ pocket-agency/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/TheCaptainKimchi/pocket-agency.git
+   git clone <your-repository-url>
    cd pocket-agency
    ```
 

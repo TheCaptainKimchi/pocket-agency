@@ -165,7 +165,7 @@ export class Network {
       }
 
       if (this.isPolling) {
-        this.pollTimer = window.setTimeout(poll, this.config.pollInterval);
+        this.pollTimer = setTimeout(poll, this.config.pollInterval) as unknown as number;
       }
     };
 
