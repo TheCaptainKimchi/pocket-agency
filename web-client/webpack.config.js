@@ -1,6 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const isDev = process.env.ENVIRONMENT === 'development';
+
+console.log('isDev', isDev);
 
 module.exports = {
   entry: './src/index.ts',
@@ -42,6 +45,11 @@ module.exports = {
     },
     compress: true,
     port: 8080,
-    hot: true
+    hot: true,
+    // Only apply these if we are in development mode
+      allowedHosts: isDev ? 'all' : 'auto',
+      client: isDev ? {
+        webSocketURL: 'auto://0.0.0.0:0/ws',
+      } : {},
   }
 };
