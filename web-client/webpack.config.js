@@ -3,8 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const isDev = process.env.ENVIRONMENT === 'development';
 
-console.log('isDev', isDev);
-
 module.exports = {
   entry: './src/index.ts',
   output: {
@@ -39,17 +37,14 @@ module.exports = {
       ]
     })
   ],
-  devServer: {
-    static: {
-      directory: path.join(__dirname, 'dist')
-    },
-    compress: true,
-    port: 8080,
-    hot: true,
-    // Only apply these if we are in development mode
-      allowedHosts: isDev ? 'all' : 'auto',
-      client: isDev ? {
-        webSocketURL: 'auto://0.0.0.0:0/ws',
-      } : {},
-  }
+devServer: {
+  static: {
+    directory: path.join(__dirname, 'dist'),
+  },
+  compress: true,
+  port: 8080,
+  hot: true,
+  allowedHosts: isDev ? 'all' : 'auto',
+},
+
 };
