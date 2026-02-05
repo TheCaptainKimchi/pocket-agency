@@ -1,0 +1,20 @@
+{
+  "appId": "com.pocketagency.app",
+  "appName": "Pocket Agency",
+  "webDir": "../web-client/dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "buildOptions": {
+      "keystorePath": "",
+      "keystorePassword": "",
+      "keystoreAlias": "",
+      "keystoreAliasPassword": ""
+    }
+  },
+  "ios": {
+    "scheme": "Pocket Agency"
+  }
+}
